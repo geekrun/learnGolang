@@ -81,7 +81,7 @@ func checkMessageFromRedis(redisQueueName string) string {
 			curTimeString := time.Unix(curTimestamp, 0).Format("2006-01-02 15:04:05")
 			resultStr = fmt.Sprintf("当前时间 %s \n 设备 %s,出现问题 \n 怀疑是,%s  \n 详细信息如下: %s", curTimeString, key, errorMsg, bytes)
 			fmt.Println(key, "结果异常", resultStr)
-			sendMessage(resultStr)
+			//sendMessage(resultStr)
 
 		} else {
 			fmt.Println(key, "结果正常", string(bytes))

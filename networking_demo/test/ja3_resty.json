@@ -1,0 +1,85 @@
+GOROOT=C:\Users\lxj07\sdk\go1.20.6 #gosetup
+GOPATH=C:\Users\lxj07\sdk\gopath #gosetup
+C:\Users\lxj07\sdk\go1.20.6\bin\go.exe test -c -o C:\Users\lxj07\AppData\Local\JetBrains\GoLand2023.1\tmp\GoLand\___Test_restyDemo_in_awesomeProject_networking_demo_test.test.exe awesomeProject/networking_demo/test #gosetup
+C:\Users\lxj07\sdk\go1.20.6\bin\go.exe tool test2json -t C:\Users\lxj07\AppData\Local\JetBrains\GoLand2023.1\tmp\GoLand\___Test_restyDemo_in_awesomeProject_networking_demo_test.test.exe -test.v -test.paniconexit0 -test.run ^\QTest_restyDemo\E$ #gosetup
+=== RUN   Test_restyDemo
+restyDemo info start  ================
+响应内容: {
+"ja3_hash": "3fed133de60c35724739b913924b6c24",
+"ja3_text": "771,49195-49199-49196-49200-52393-52392-49161-49171-49162-49172-156-157-47-53-49170-10-4865-4866-4867,0-5-10-11-13-65281-16-18-43-51,29-23-24-25,0",
+"ja3n_hash": "f501179f65f5213998821ea3f941f43f",
+"ja3n_text": "771,49195-49199-49196-49200-52393-52392-49161-49171-49162-49172-156-157-47-53-49170-10-4865-4866-4867,0-5-10-11-13-16-18-43-51-65281,29-23-24-25,0",
+"akamai_hash": "d7b77e8c74a096366dd6190cbb2fa50a",
+"akamai_text": "2:0;4:4194304;6:10485760|1073741824|0|a,m,p,s"
+}
+restyDemo info end  ================
+restyDemo info start  ================
+响应内容: {
+"ja3_hash": "3fed133de60c35724739b913924b6c24",
+"ja3_text": "771,49195-49199-49196-49200-52393-52392-49161-49171-49162-49172-156-157-47-53-49170-10-4865-4866-4867,0-5-10-11-13-65281-16-18-43-51,29-23-24-25,0",
+"ja3n_hash": "f501179f65f5213998821ea3f941f43f",
+"ja3n_text": "771,49195-49199-49196-49200-52393-52392-49161-49171-49162-49172-156-157-47-53-49170-10-4865-4866-4867,0-5-10-11-13-16-18-43-51-65281,29-23-24-25,0",
+"akamai_hash": "d7b77e8c74a096366dd6190cbb2fa50a",
+"akamai_text": "2:0;4:4194304;6:10485760|1073741824|0|a,m,p,s"
+}
+restyDemo info end  ================
+--- PASS: Test_restyDemo (1.80s)
+PASS
+
+
+
+[49199 49195 49200 49196]restyDemo info start  ================
+响应内容: {
+"ja3_hash": "ea5a0049e859267574f6f6cb9ad33b60",
+"ja3_text": "771,49195-49199-49196-49200-4865-4866-4867,0-5-10-11-13-65281-16-18-43-51,29-23-24-25,0",
+"ja3n_hash": "5e1ab3e272207a2d0f9188133d930c0a",
+"ja3n_text": "771,49195-49199-49196-49200-4865-4866-4867,0-5-10-11-13-16-18-43-51-65281,29-23-24-25,0",
+"akamai_hash": "d7b77e8c74a096366dd6190cbb2fa50a",
+"akamai_text": "2:0;4:4194304;6:10485760|1073741824|0|a,m,p,s"
+}
+restyDemo info end  ================
+[49199 49195 49200 49196]restyDemo info start  ================
+响应内容: {
+"ja3_hash": "ea5a0049e859267574f6f6cb9ad33b60",
+"ja3_text": "771,49195-49199-49196-49200-4865-4866-4867,0-5-10-11-13-65281-16-18-43-51,29-23-24-25,0",
+"ja3n_hash": "5e1ab3e272207a2d0f9188133d930c0a",
+"ja3n_text": "771,49195-49199-49196-49200-4865-4866-4867,0-5-10-11-13-16-18-43-51-65281,29-23-24-25,0",
+"akamai_hash": "d7b77e8c74a096366dd6190cbb2fa50a",
+"akamai_text": "2:0;4:4194304;6:10485760|1073741824|0|a,m,p,s"
+}
+restyDemo info end  ================
+--- PASS: Test_restyDemo (1.99s)
+PASS
+
+
+Process finished with the exit code 0
+GOROOT=C:\Users\lxj07\sdk\go1.20.6 #gosetup
+GOPATH=C:\Users\lxj07\sdk\gopath #gosetup
+C:\Users\lxj07\sdk\go1.20.6\bin\go.exe test -c -o C:\Users\lxj07\AppData\Local\JetBrains\GoLand2023.1\tmp\GoLand\___Test_restyDemo_in_awesomeProject_networking_demo_test.test.exe awesomeProject/networking_demo/test #gosetup
+C:\Users\lxj07\sdk\go1.20.6\bin\go.exe tool test2json -t C:\Users\lxj07\AppData\Local\JetBrains\GoLand2023.1\tmp\GoLand\___Test_restyDemo_in_awesomeProject_networking_demo_test.test.exe -test.v -test.paniconexit0 -test.run ^\QTest_restyDemo\E$ #gosetup
+=== RUN   Test_restyDemo
+[49196 49169 49200 49195 49199]restyDemo info start  ================
+响应内容: {
+"ja3_hash": "2ec45d09239cb9d19f869cd18d336855",
+"ja3_text": "771,49195-49199-49196-49200-49169-4865-4866-4867,0-5-10-11-13-65281-16-18-43-51,29-23-24-25,0",
+"ja3n_hash": "62375d6e3874cca9162e29dbb2445fa8",
+"ja3n_text": "771,49195-49199-49196-49200-49169-4865-4866-4867,0-5-10-11-13-16-18-43-51-65281,29-23-24-25,0",
+"akamai_hash": "d7b77e8c74a096366dd6190cbb2fa50a",
+"akamai_text": "2:0;4:4194304;6:10485760|1073741824|0|a,m,p,s"
+}
+restyDemo info end  ================
+[49196 49200 49195 49169 49199]restyDemo info start  ================
+响应内容: {
+"ja3_hash": "2ec45d09239cb9d19f869cd18d336855",
+"ja3_text": "771,49195-49199-49196-49200-49169-4865-4866-4867,0-5-10-11-13-65281-16-18-43-51,29-23-24-25,0",
+"ja3n_hash": "62375d6e3874cca9162e29dbb2445fa8",
+"ja3n_text": "771,49195-49199-49196-49200-49169-4865-4866-4867,0-5-10-11-13-16-18-43-51-65281,29-23-24-25,0",
+"akamai_hash": "d7b77e8c74a096366dd6190cbb2fa50a",
+"akamai_text": "2:0;4:4194304;6:10485760|1073741824|0|a,m,p,s"
+}
+restyDemo info end  ================
+--- PASS: Test_restyDemo (1.60s)
+PASS
+
+
+Process finished with the exit code 0
