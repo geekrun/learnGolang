@@ -19,7 +19,6 @@ import (
 	"embed"
 	"fmt"
 	"os"
-	"os/exec"
 	"token_manager/cmd"
 	"unsafe"
 )
@@ -60,14 +59,6 @@ func extractScript(scriptName string) (string, error) {
 	}
 
 	return scriptPath, nil
-}
-
-// 执行脚本
-func runShellScript(scriptPath string) error {
-	cmd := exec.Command("/system/bin/sh", scriptPath)
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
-	return cmd.Run()
 }
 
 func main() {
