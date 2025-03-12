@@ -47,7 +47,7 @@ func (tm *TokenManager) BackupToken(phoneNumber string) error {
 	if phoneNumber == "" {
 		phoneNumber = tm.phoneNumber
 	}
-	err := tool.RunShellScript("backup_gms_sms.sh", phoneNumber)
+	err := tool.RunShellScript("backup_gms_sms_v2.sh", phoneNumber)
 	if err != nil {
 		return err
 	}
@@ -62,7 +62,7 @@ func (tm *TokenManager) RestoreToken(phoneNumber string) error {
 	if phoneNumber == "" {
 		return errors.New("备份号码必须存在")
 	}
-	err := tool.RunShellScript("restore_gms_sms.sh", phoneNumber)
+	err := tool.RunShellScript("restore_gms_sms_v2.sh", phoneNumber)
 	if err != nil {
 		return err
 	}
