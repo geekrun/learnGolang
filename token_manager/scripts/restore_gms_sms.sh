@@ -22,6 +22,9 @@ for pkg in com.google.android.gms com.google.android.gsf com.android.vending; do
   fi
 done
 
+# **强制停止 Messages**
+am force-stop com.google.android.apps.messaging
+
 # **定义备份目录**
 BACKUP_DIR="/data/media/0/bak/$1"
 
@@ -58,21 +61,25 @@ else
   echo "⚠️ Google 服务备份文件不存在，跳过..."
 fi
 
+# 清除 messages 缓存
+pm clear com.google.android.apps.messaging
+
 # **还原 Google Messages 数据**
-if [ -f "$BACKUP_DIR/MessagesBackup.tar" ]; then
-  echo "📂 开始恢复 Messages 应用数据..."
-  su -c "/data/adb/magisk/busybox tar -xvf $BACKUP_DIR/MessagesBackup.tar -C /data/data/"
 
-  # **恢复 SELinux 上下文**
-  su -c "restorecon -Rv /data/data/com.google.android.apps.messaging"
-
-  # **修复权限**
-  su -c "chmod -R 771 /data/data/com.google.android.apps.messaging"
-
-  echo "✅ Messages 应用数据已恢复"
-else
-  echo "⚠️ Messages 备份文件不存在，跳过..."
-fi
+#if [ -f "$BACKUP_DIR/MessagesBackup.tar" ]; then
+#  echo "📂 开始恢复 Messages 应用数据..."
+#  su -c "/data/adb/magisk/busybox tar -xvf $BACKUP_DIR/MessagesBackup.tar -C /data/data/"
+#
+#  # **恢复 SELinux 上下文**
+#  su -c "restorecon -Rv /data/data/com.google.android.apps.messaging"
+#
+#  # **修复权限**
+#  su -c "chmod -R 771 /data/data/com.google.android.apps.messaging"
+#
+#  echo "✅ Messages 应用数据已恢复"
+#else
+#  echo "⚠️ Messages 备份文件不存在，跳过..."
+#fi
 
 # **恢复 Google 服务 & Messages**
 for pkg in com.google.android.gms com.google.android.gsf com.android.vending; do
