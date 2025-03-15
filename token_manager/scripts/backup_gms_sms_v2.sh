@@ -53,12 +53,12 @@ else
 fi
 
 ## **备份 Google Messages 数据**
-#if [ -d "/data/data/com.google.android.apps.messaging" ]; then
-#  su -c "/data/adb/magisk/busybox tar --exclude='*.jar' --exclude='*.apk' --exclude='*.odex' -cvf $BACKUP_DIR/MessagesBackup.tar -C /data/data com.google.android.apps.messaging"
-#  echo "✅ Messages 应用数据已备份"
-#else
-#  echo "⚠️ 未找到 Messages 应用数据，跳过备份..."
-#fi
+if [ -d "/data/data/com.google.android.apps.messaging" ]; then
+  su -c "/data/adb/magisk/busybox tar  --numeric-owner --exclude-from=$EXCLUDE_FILE -czvf $BACKUP_DIR/MessagesBackup.tar -C /data/data com.google.android.apps.messaging"
+  echo "✅ Messages 应用数据已备份"
+else
+  echo "⚠️ 未找到 Messages 应用数据，跳过备份..."
+fi
 
 # **恢复 Google 服务 & Messages**
 for pkg in com.google.android.gms com.google.android.gsf com.android.vending; do
