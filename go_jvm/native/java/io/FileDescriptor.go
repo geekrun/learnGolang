@@ -1,7 +1,7 @@
 package io
 
-import "native"
-import "rtda"
+import "jvmgo/native"
+import "jvmgo/rtda"
 
 const fd = "java/io/FileDescriptor"
 

@@ -4,7 +4,6 @@ import "fmt"
 import "jvmgo/instructions"
 import "jvmgo/instructions/base"
 import "jvmgo/rtda"
-import ""
 
 func interpret(thread *rtda.Thread, logInst bool) {
 	defer catchErr(thread)
